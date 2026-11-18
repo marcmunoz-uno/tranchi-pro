@@ -162,6 +162,7 @@ h1{font-weight:900}
 .ai-ph{opacity:.5}
 .ai-photo{display:none}
 .ai-photo[data-loaded]{display:flex}
+.ai-photo[data-loaded]{background-size:cover;background-position:center 55%;aspect-ratio:4/3}
 @media(max-width:520px){.topbar .tb1{display:none}.topbar span{margin-left:0}}
 .list,.quote,details,.deal,.trust div,.rd{box-shadow:0 2px 10px rgba(27,42,78,.04)}
 .row b{color:var(--gold2)}
@@ -225,11 +226,9 @@ section{border-top-color:var(--line)}
 .g-top b{display:block;color:var(--navy);font-size:14px}
 .g-stars{font-size:13px;color:#f5a623}.g-stars em{font-style:normal;color:var(--dim);margin-left:4px}
 .g-review p{font-size:15px;color:var(--text)}
-.team{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.team figure{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;text-align:center;box-shadow:0 2px 10px rgba(27,42,78,.04)}
-.team img{display:block;width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
-.team figcaption{padding:10px;font-size:13px;color:var(--dim)}
-.team figcaption b{display:block;color:var(--navy);font-size:15px}
+.mgc{background:var(--navy);border-radius:14px;padding:28px 20px 22px;text-align:center;box-shadow:0 12px 30px rgba(27,42,78,.12)}
+.mgc img{width:220px;max-width:70%;height:auto}
+.mgc p{color:#c8d3e6;font-size:14px;margin-top:14px;line-height:1.5}
 </style>
 </head>
 <body>
@@ -253,7 +252,7 @@ section{border-top-color:var(--line)}
     <div class="ai-card" aria-label="Example of Tranchi analyzing a deal">
       <!-- HERO DEAL PHOTO: drop a real Pro deal photo at tranchi-deal-photos/hero-deal.jpg
            and update the numbers below to that deal's real numbers. Until then the house icon shows. -->
-      <div class="ai-photo" style="background-image:url('tranchi-deal-photos/hero-deal.jpg')"><span class="ai-ph">🏠</span><span class="ai-live">● Found this week</span></div>
+      <div class="ai-photo" style="background-image:url('tranchi-deal-photos/hero-deal.jpg')"><span class="ai-ph">🏠</span><span class="ai-live">● Real listing · Marion, OH</span></div>
       <!-- illustrated header, shown until a real deal photo is added -->
       <div class="lst-ill" aria-hidden="true">
         <svg viewBox="0 0 320 150" width="100%" height="100%" preserveAspectRatio="xMidYMax meet">
@@ -272,14 +271,14 @@ section{border-top-color:var(--line)}
 
       <!-- THE LISTING -->
       <div class="lst">
-        <div class="lst-dom">⏱ 112 days on market · price cut twice</div>
-        <div class="lst-price"><small>Listed at</small>$109,900</div>
-        <div class="lst-meta">3 bd · 1 ba · 1,240 sqft · Ohio</div>
+        <div class="lst-dom">⏱ 208 days on market · price cut 6 times</div>
+        <div class="lst-price"><small>Listed at</small>$77,900</div>
+        <div class="lst-meta">3 bd · 1.5 ba · 1,336 sqft · Marion, OH · tenant in place</div>
         <div class="lst-grid">
-          <div><small>After-repair value</small><b>$150,000</b></div>
-          <div><small>Est. repairs</small><b>$12,000</b></div>
-          <div><small>Tranchi offer</small><b>$81,900</b></div>
-          <div class="win"><small>Your flip fee</small><b>~$11,100</b></div>
+          <div><small>Est. after-repair value</small><b>$110,000</b></div>
+          <div><small>Est. repairs</small><b>$15,000</b></div>
+          <div><small>Tranchi offer</small><b>$52,000</b></div>
+          <div class="win"><small>Your flip fee</small><b>~$10,000</b></div>
         </div>
       </div>
 
@@ -287,18 +286,18 @@ section{border-top-color:var(--line)}
       <div class="fl">
         <div class="fs" style="--d:.3s"><div class="fn">1</div><div>
           <b>The seller is stuck</b>
-          <p>Listed at <s>$109,900</s>. No offers in 112 days, price cut twice. They just want it sold.</p></div></div>
+          <p>Listed in April at <s>$85,000</s>. Six price cuts, pulled off the market, relisted at $77,900. 208 days and still no sale.</p></div></div>
         <div class="fs" style="--d:1s"><div class="fn">2</div><div>
-          <b>Tranchi writes your offer: $81,900</b>
-          <p>Cash, as-is, close in 30 days. No repairs, no showings, no more waiting. That's why a tired seller says yes.</p></div></div>
+          <b>Tranchi writes your offer: $52,000</b>
+          <p>Cash, as-is, tenant stays, close in 30 days. No repairs, no showings, no more waiting. That's the offer a tired seller listens to.</p></div></div>
         <div class="fs" style="--d:1.7s"><div class="fn">3</div><div>
-          <b>A cash buyer pays $93,000</b>
-          <p>Fixed up it's worth $150,000 and needs $12,000 of work. Investors pay up to 70% of that value minus repairs:</p>
-          <div class="fm">70% × $150,000 − $12,000 = <b>$93,000</b></div></div></div>
+          <b>A cash buyer pays $62,000</b>
+          <p>A fixed-up house one block over sold for $99,900, so fixed up this one is worth about $110,000. Call it $15,000 of work. Investors pay up to 70% of that value minus repairs:</p>
+          <div class="fm">70% × $110,000 − $15,000 = <b>$62,000</b></div></div></div>
         <div class="fs hl" style="--d:2.4s"><div class="fn">$</div><div>
           <b>You keep the difference</b>
-          <p>You sell your contract to the buyer for $93,000. The seller still gets their $81,900. The gap is your fee, and you never buy the house.</p>
-          <div class="fm">$93,000 − $81,900 = <b class="g">$11,100</b></div></div></div>
+          <p>You sell your contract to the buyer for $62,000. The seller still gets their $52,000. The gap is your fee, and you never buy the house.</p>
+          <div class="fm">$62,000 − $52,000 = <b class="g">$10,000</b></div></div></div>
       </div>
       <div class="ai-foot" style="--d:3.2s">✓ Tranchi runs this math on every deal in 15 seconds</div>
     </div>
@@ -418,12 +417,11 @@ section{border-top-color:var(--line)}
 <!-- WHO'S BEHIND IT -->
 <section>
 <div class="label">Who's behind Tranchi</div>
-<h2>Real founders. <span class="gold">Real company.</span></h2>
-<div class="team">
-<figure><img src="team/marc-munoz.webp" width="360" height="360" loading="lazy" alt="Marc A. Munoz"><figcaption><b>Marc A. Munoz</b>Co-founder</figcaption></figure>
-<figure><img src="team/deeb-ghezlan.webp" width="360" height="360" loading="lazy" alt="Deeb Ghezlan"><figcaption><b>Deeb Ghezlan</b>Co-founder</figcaption></figure>
+<h2>Built by <span class="gold">Munoz Ghezlan Capital</span></h2>
+<div class="mgc">
+<img src="munoz-ghezlan-capital.svg" width="181" height="60" alt="Munoz Ghezlan Capital">
+<p>A mortgage company on Wall Street, New York, and the team behind Tranchi.</p>
 </div>
-<p class="note">Built by Munoz &amp; Ghezlan Capital, a mortgage company on Wall Street.</p>
 </section>
 <!-- FAQ -->
   <section>
@@ -447,7 +445,7 @@ section{border-top-color:var(--line)}
 
 <script>
 // Hero photo: mark loaded only if the real deal photo exists
-(function(){var el=document.querySelector('.ai-photo');if(!el)return;var i=new Image();i.onload=function(){el.setAttribute('data-loaded','');var n=document.querySelector('.ai-note');if(n)n.textContent='Real deal found by Tranchi this week. Confirm availability before acting.';};i.src='tranchi-deal-photos/hero-deal.jpg';})();
+(function(){var el=document.querySelector('.ai-photo');if(!el)return;var i=new Image();i.onload=function(){el.setAttribute('data-loaded','');var n=document.querySelector('.ai-note');if(n)n.textContent='Real listing in Tranchi Pro, checked Nov 18. Value and repairs are estimates; the seller hasn\u2019t agreed to an offer.';};i.src='tranchi-deal-photos/hero-deal.jpg';})();
 // Personalize from Typeform hidden fields: ?name=Jay&goal=wholesale
 (function(){
   try{
